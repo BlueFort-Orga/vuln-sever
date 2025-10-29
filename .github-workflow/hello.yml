@@ -1,0 +1,12 @@
+# .github/workflows/selfhosted-test.yml
+name: Hello
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: [self-hosted]   # doit correspondre au label de ton runner
+    steps:
+      - name: Hello World
+        run: echo "✅ Hello from my self-hosted runner!"
